@@ -1,0 +1,98 @@
+{
+    "nav": {
+        "home": "Home",
+        "collection": "Collection",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "hero": {
+        "intro": "Discover timeless sophistication where every detail whispers <1>elegant</1> perfection."
+    },
+    "home": {
+        "fashionTitle": "Discover Fashion That Speaks Your Language",
+        "fashionSubtitle": "Where style becomes an extension of your unique personality",
+        "newArrivals": "New in",
+        "womensWear": "Women's wear",
+        "trendingTitle": "Top trending",
+        "trendingSubtitle": "Built for the modern man",
+        "kidsTitle": "Little styles, big adventures"
+    },
+    "products": {
+        "bestSellers": "Our Bestsellers",
+        "offers": {
+            "title": "Offers",
+            "subtitle": "Don't miss today's featured deals"
+        }
+    },
+    "discover": {
+        "completeLook": "Complete your look",
+        "womensTitle": "Women's",
+        "womensSubtitle": "Here to bring your lifestyle to the next level",
+        "trendingStyles": "Top trending styles",
+        "mensTitle": "Men's",
+        "mensSubtitle": "Distinguished. Individual. Character"
+    },
+    "common": {
+        "shopNow": "Shop Now",
+        "learnMore": "Learn More",
+        "back": "Back",
+        "continueShopping": "Continue Shopping",
+        "or": "or",
+        "submit": "Submit",
+        "send": "Send",
+        "follow": "Follow Us",
+        "loading": "Loading...",
+        "brandName": "elegant"
+    },
+    "collection": {
+        "title": "Collections",
+        "filters": "Filters",
+        "category": "Category",
+        "subcategory": "Subcategory",
+        "men": "Men",
+        "women": "Women",
+        "kids": "Kids",
+        "topwear": "Topwear",
+        "bottomwear": "Bottomwear",
+        "winter": "Winter",
+        "empty": "No products found"
+    },
+    "about": {
+        "title": "About our store",
+        "content1": "Welcome to Elegant, where timeless style meets modern sophistication. Founded with a passion for refined fashion, we curate exquisite clothing that embodies grace, quality, and effortless elegance. Each piece in our collection is thoughtfully designed to elevate your everyday wardrobe, blending premium fabrics with impeccable craftsmanship.",
+        "content2": "At Elegant, we believe true style is not just about trends—it's about celebrating individuality with pieces that inspire confidence and poise. From chic workwear to stunning evening attire, our designs are tailored for those who appreciate understated luxury and attention to detail.",
+        "content3": "Committed to sustainability and ethical practices, we prioritize responsibly sourced materials and fair production, ensuring beauty aligns with integrity. Thank you for choosing Elegant—where every garment tells a story of sophistication."
+    },
+    "cart": {
+        "title": "Shopping Cart",
+        "empty": "Your cart is empty",
+        "orderSummary": "Order Summary",
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "total": "Total",
+        "checkout": "Proceed to Checkout",
+        "calculatedAtCheckout": "Calculated at checkout"
+    },
+    "contact": {
+        "submissionSuccess": "Your message has been sent! We will contact you soon.",
+        "namePlaceholder": "John Doe",
+        "emailPlaceholder": "your@email.com",
+        "subjectPlaceholder": "How can we help?",
+        "messagePlaceholder": "Type your message here...",
+        "locationAddress": "123 Fashion Street, Style District\nNew York, NY 10001",
+        "emailAddresses": "support@fashionstore.com\ninfo@fashionstore.com",
+        "phoneNumber": "+1 (555) 123-4567",
+        "callHours": "Mon-Fri: 9am-6pm",
+        "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+        "saturday": "Saturday: 10:00 AM - 4:00 PM",
+        "sunday": "Sunday: Closed"
+    },
+    "auth": {
+        "login": "Login",
+        "register": "Register",
+        "email": "Email",
+        "password": "Password",
+        "noAccount": "Don't have an account?",
+        "haveAccount": "Already have an account?"
+    }
+}

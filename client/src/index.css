@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-poppins: "Poppins", sans-serif;
+    --font-edu: "Edu SA Hand", cursive;
+
+}
+
+
+@media (min-width: 768px) {
+    a.active::after {
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        height: 4px;
+        width: 100%;
+        background-color: #ccc;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.2s;
+    }
+}
+
+.bento {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.25rem;
+
+    img {
+        object-fit: cover;
+    }
+
+    &>div {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media (min-width: 580px) {
+    .bento {
+        gap: 1rem;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+            'box1 box1 box1 box1'
+            'box2 box2 box3 box3'
+            'box4 box4 box4 box4'
+
+    }
+
+    .item-1 {
+        grid-area: box1;
+    }
+
+    .item-2 {
+        grid-area: box2;
+    }
+
+    .item-3 {
+        grid-area: box3;
+    }
+
+    .item-4 {
+        grid-area: box4;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .bento {
+        gap: 1rem;
+        grid-auto-columns: 1fr;
+        min-height: 75vh;
+        grid-template-areas:
+            'box1 box1 box2 box3'
+            'box1 box1 box4 box4';
+    }
+
+}
+
+/* .product-gallery {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-swiper-container {
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.thumbnail.active {
+    border-color: #007bff;
+    opacity: 1;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-controls button {
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gallery-controls button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+} */
+
+/* Base Swiper Container */
+.swiper-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Navigation Buttons - RTL compatible */
+.button-prev,
+.button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Arrow icons */
+.button-next::after,
+.button-prev::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+/* LTR (Default) */
+:root:not([dir="rtl"]) {
+    .button-prev {
+        left: 20px;
+    }
+
+    .button-prev::after {
+        transform: rotate(135deg);
+        margin-right: 2px;
+    }
+
+    .button-next {
+        right: 20px;
+    }
+
+    .button-next::after {
+        transform: rotate(-45deg);
+        margin-left: 2px;
+    }
+}
+
+/* RTL Overrides */
+[dir="rtl"] {
+    .button-prev {
+        right: 20px !important;
+        left: auto !important;
+    }
+
+    .button-prev::after {
+        transform: rotate(-45deg) !important;
+        margin-left: 2px !important;
+        margin-right: 0 !important;
+    }
+
+    .button-next {
+        left: 20px !important;
+        right: auto !important;
+    }
+
+    .button-next::after {
+        transform: rotate(135deg) !important;
+        margin-right: 2px !important;
+        margin-left: 0 !important;
+    }
+
+    /* Optional: Reverse slide order */
+    .swiper-wrapper {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Pagination (works for both directions) */
+.swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+    transform: scale(1.2);
+}
